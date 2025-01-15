@@ -4,10 +4,10 @@ async function seed() {
   await prisma.category.createMany({
     data: [
       { id: "146b1a88-b3d3-4232-8b8f-c1f006f1e86d", name: "Alimentação" },
-      { id: "52e81585-f71a-44cd-8bd0-49771e45da44", name: "Compras" },
-      { id: "57d6e5ff-35f6-4d21-a521-84f23d511d25", name: "Hospedagem" },
-      { id: "826910d4-187d-4c15-88f4-382b7e056739", name: "Cinema" },
-      { id: "abce52cf-b33b-4b3c-8972-eb72c66c83e4", name: "Padaria" },
+      { id: "52e81585-f71a-44cd-8bd0-49771e45da44", name: "Estacionamentos" },
+      { id: "57d6e5ff-35f6-4d21-a521-84f23d511d25", name: "Postos de Combústiveis" },
+      { id: "826910d4-187d-4c15-88f4-382b7e056739", name: "Oficinas" },
+      { id: "abce52cf-b33b-4b3c-8972-eb72c66c83e4", name: "Saúde" },
     ],
   })
 
@@ -84,78 +84,78 @@ async function seed() {
         cover:
           "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400&h=300",
       },
-      // COMPRAS
+      // ESTACIONAMENTO
       {
         id: "6dbf1cd5-c20a-4e6a-bc9a-a26069825d2c",
         categoryId: "52e81585-f71a-44cd-8bd0-49771e45da44",
-        name: "Loja Nova",
+        name: "Estacionamento Digital - Zona Azul",
         description:
-          "Roupas e acessórios modernos para o dia a dia. Estilo casual com ótimos preços.",
-        latitude: -23.564580184943406,
-        longitude: -46.66202724389377,
+          "Sistema de estacionamento rotativo com aproximadamente 1.700 vagas distribuídas pelo centro da cidade.",
+        latitude: -14.85031,
+        longitude: -40.83698,
         coupons: 10,
-        address: "Rua José Maria Lisboa - Jardim Paulista",
+        address: "R. Cel. Gugé, 310 - Centro, Vitória da Conquista - BA, 45000-510",
         phone: "(16) 3456-7890",
         cover:
-          "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&h=300",
+          "https://autopark.com.br/wp-content/uploads/2019/09/imagem-destaque-ALTERADO-2.png",
       },
       {
         id: "756b1d53-cc5b-4995-8ebd-8eee3dae01af",
         categoryId: "52e81585-f71a-44cd-8bd0-49771e45da44",
-        name: "Tech Plus",
+        name: "Estacionamento do Aeroporto Glauber Rocha",
         description:
-          "Loja de eletrônicos com produtos de última geração. Gadgets e acessórios para todos.",
-        latitude: -23.56183474903135,
-        longitude: -46.66355095952655,
+          "Localizado na região sudoeste, o aeroporto oferece estacionamento com 410 vagas para passageiros e visitantes. ",
+        latitude: -14.90753,
+        longitude: -40.91706,
         coupons: 10,
-        address: "Alameda Franca - Cerqueira César",
-        phone: "(17) 9876-5432",
+        address: "Rod. Santos Dumont, BR-116 - KM 832 - Iguá, Vitória da Conquista - BA, 45105-000",
+        phone: "(77) 3424-0546",
         cover:
-          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300",
+          "https://www.ericaavallone.com.br/painel/post/img/369/Responsabilidade%20civil.jpg",
       },
       {
         id: "77a5d5eb-bcfa-4457-916d-a5b6fe7aa183",
         categoryId: "52e81585-f71a-44cd-8bd0-49771e45da44",
-        name: "Casa Luxo",
+        name: "OK Park Estacionamento",
         description:
-          "Decoração sofisticada para casa e escritório. Produtos exclusivos para ambientes elegantes.",
+          "Situado na Avenida Expedicionários, 452 - Recreio, na região norte da cidade, oferece serviços de estacionamento para visitantes e moradores.",
         latitude: -23.55870738391179,
         longitude: -46.66172705741049,
         coupons: 10,
-        address: "Alameda Santos - Jardim Paulista",
-        phone: "(18) 2345-6789",
+        address: "R. Góes Calmon - Centro, Vitória da Conquista - BA, 45000-340",
+        phone: "(71) 98213-0707",
         cover:
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300",
+          "https://www.maxipark.com.br/wp-content/uploads/2021/07/Imagem_Blog.jpg",
       },
       {
         id: "78806cca-cfb0-45bc-8dc3-c57a42f0da01",
         categoryId: "52e81585-f71a-44cd-8bd0-49771e45da44",
-        name: "BookMart",
+        name: "Estacionamento do Shopping Conquista Sul",
         description:
-          "Livraria especializada em best-sellers e clássicos. Espaço aconchegante para leitura.",
-        latitude: -23.556376883488902,
-        longitude: -46.65941413229616,
+          "Situado na zona sul da cidade, o shopping possui um estacionamento com 900 vagas, gerenciado pela Indigo.",
+        latitude: -14.89404,
+        longitude: -40.84512,
         coupons: 10,
-        address: "Rua Luís Coelho - Consolação",
+        address: "R. N Morada Passaros III, 02 - Boa Vista, Vitória da Conquista - BA",
         phone: "(19) 9876-5432",
         cover:
-          "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&h=300",
+          "https://www.dimep.com.br/wp-content/uploads/2019/06/1-estacionamento-coberto.jpg",
       },
       {
         id: "78ced7b1-436b-42ca-9c66-747f2b671321",
         categoryId: "52e81585-f71a-44cd-8bd0-49771e45da44",
-        name: "Green Market",
+        name: "Leve Big Vitória da Conquista - Coopark",
         description:
-          "Produtos orgânicos e saudáveis para o seu dia a dia. Alimentos frescos e sustentáveis.",
+          "Localizado no bairro Candeias, na região leste, este estacionamento oferece facilidade de acesso e pagamento digital. ",
         latitude: -23.55473446617852,
         longitude: -46.65859874077045,
         coupons: 10,
-        address: "Rua Matias Aires - Consolação",
-        phone: "(11) 8765-4321",
+        address: "Av. Otávio Santos, 429 - Recreio, Vitória da Conquista - BA, 45020-750",
+        phone: "(77) 99153-2605",
         cover:
-          "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=400&h=300",
+          "https://www.autoescolaonline.net/wp-content/uploads/2017/10/estacionamento-shopping.jpg",
       },
-      // HOSPEDAGEM
+      // OFICINA
       {
         id: "7be85f5b-533f-4974-8c9e-75cae740041c",
         categoryId: "57d6e5ff-35f6-4d21-a521-84f23d511d25",
@@ -226,7 +226,7 @@ async function seed() {
         cover:
           "https://images.unsplash.com/photo-1558979158-65a1eaa08691?w=400&h=300",
       },
-      // CINEMA
+      // POSTO DE COMBUSTÍVEL
       {
         id: "bde73364-95c5-46e4-8084-79a7ca3824c4",
         categoryId: "826910d4-187d-4c15-88f4-382b7e056739",
@@ -269,7 +269,7 @@ async function seed() {
         cover:
           "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300",
       },
-      // PADARIA
+      // SAÚDE
       {
         id: "def71683-e89f-4c3b-a652-868a02f54ae9",
         categoryId: "abce52cf-b33b-4b3c-8972-eb72c66c83e4",
